@@ -1,0 +1,18 @@
+{
+    "name": "ahmedash95/users-verification",
+    "description": "Laravel Package for managing users verification.",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Ahmed Ashraf",
+            "email": "ahmed29329@gmail.com"
+        }
+    ],
+    "autoload" : {
+        "psr-4": {
+            "Ahmedash95\\UsersVerification\\" : "src/"
+        }
+    },
+    "require": {}
+}
