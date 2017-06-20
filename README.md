@@ -48,6 +48,11 @@ you must publish the migration file:
 php artisan vendor:publish --provider="Ahmedash95\UsersVerification\UsersVerificationServiceProvider" --tag="migrations"
 ```
 
+then run the migration command
+
+```bash
+php artisan migrate
+```
 
 ## Use verification in User model
 
