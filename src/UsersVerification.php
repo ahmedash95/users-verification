@@ -10,7 +10,7 @@ trait UsersVerification {
 		return $this->hasOne(UsersToken::class);
 	}
 
-	public function verified(){
+	public function isVerified(){
 		return $this->token ? $this->token->verified : false;
 	}
 
@@ -21,7 +21,7 @@ trait UsersVerification {
 		return $this->getToken() == $token;
 	}
 
-	public function verifiy(){
+	public function verify(){
 		if(!$this->token){
 			throw new \Exception("User has no tokens");
 		}

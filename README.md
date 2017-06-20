@@ -16,9 +16,9 @@ $user->isVerified()
 $token = 'random_token_generated_by_getToken()_method'
 $user->verifyToken($token) // return true or false
 
-// verifiy the user
+// verify the user
 if($user->verifyToken($token)) {
-	$user->verifiy();
+	$user->verify();
 }
 
 // remove user token
@@ -81,10 +81,10 @@ public function verifyToken(String $token) : bool
 
 ### Verify the user
 
-After checking if the token is valid you may want to activate user verification .. then you should use `verifiy` method
+After checking if the token is valid you may want to activate user verification .. then you should use `verify` method
 
 ```php
-public function verifiy()
+public function verify()
 ```
 
 ### Get user by token
